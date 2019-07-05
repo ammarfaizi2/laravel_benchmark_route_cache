@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+for ($i=0; $i < 3000; $i++) { 
+	Route::get("/test/".$i, "IndexController@test");
+}
