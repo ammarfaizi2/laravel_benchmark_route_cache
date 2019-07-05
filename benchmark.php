@@ -18,7 +18,7 @@ for ($i=0; $i < 100; $i++) {
 	test("http://127.0.0.1:8000/test/1");
 	$time = microtime(true) - $start;
 	print "Test ".$i.": ".$time."\n";
-	$arr[] = $tme;
+	$arr[] = $time;
 }
 
 print "Average: ". (array_sum($arr) / count($arr))."\n";
