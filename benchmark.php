@@ -20,5 +20,7 @@ for ($i=0; $i < 100; $i++) {
 	print "Test ".$i.": ".$time."\n";
 	$arr[] = $time;
 }
-
-print "Average: ". (array_sum($arr) / count($arr))."\n";
+print "\n\n";
+print "Average\t: ". (array_sum($arr) / count($arr))."\n";
+print "Min\t\t:" . min($arr)."\n";
+print "Max\t\t:" . max($arr)."\n";
