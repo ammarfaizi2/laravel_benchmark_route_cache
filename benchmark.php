@@ -22,5 +22,5 @@ for ($i=0; $i < 100; $i++) {
 }
 print "\n\n";
 print "Average\t: ". (array_sum($arr) / count($arr))."\n";
-print "Min\t:" . min($arr)."\n";
-print "Max\t:" . max($arr)."\n";
+print "Min\t: " . min($arr)."\n";
+print "Max\t: " . max($arr)."\n";
