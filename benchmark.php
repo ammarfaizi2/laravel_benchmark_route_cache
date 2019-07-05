@@ -12,8 +12,13 @@ function test(string $url)
 	}
 }
 
-for ($i=0; $i < 10; $i++) { 
+$arr = [];
+for ($i=0; $i < 100; $i++) {
 	$start = microtime(true);
 	test("http://127.0.0.1:8000/test/1");
-	print "Test ".$i.": ".(microtime(true) - $start)."\n";
+	$time = microtime(true) - $start;
+	print "Test ".$i.": ".$time."\n";
+	$arr[] = $tme;
 }
+
+print "Average: ". (array_sum($arr) / count($arr))."\n";
