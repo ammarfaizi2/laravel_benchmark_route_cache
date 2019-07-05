@@ -103,7 +103,7 @@ class RouteCacheCommand2 extends Command
      */
     protected function buildRouteCacheFile(RouteCollection $routes)
     {
-        $stub = $this->files->get(__DIR__.'/stubs/routes.stub');
+        $stub = $this->files->get(__DIR__.'/routes.stub');
 
         return str_replace(
             '{{routes}}',
